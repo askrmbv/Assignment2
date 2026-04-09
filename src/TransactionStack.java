@@ -12,9 +12,4 @@ public class TransactionStack {
         if (top == -1) return null;
         return arr[top--];
     }
-
-    public String peek() {
-        if (top == -1) return "No history";
-        return arr[top];
-    }
 }

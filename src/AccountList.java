@@ -27,6 +27,10 @@ public class AccountList {
     }
 
     public void displayAll() {
+        if (head == null) {
+            System.out.println("No accounts found.");
+            return;
+        }
         Node temp = head;
         while (temp != null) {
             System.out.println(temp.data);
